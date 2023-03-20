@@ -1,6 +1,6 @@
 package mx.edu.uacm.modelo;
 
-public class Persona {
+public class Persona implements IPaciente{
     private String nombrePersona;
     private Integer edadPersona;
     private String generoPersona;
@@ -66,5 +66,25 @@ public class Persona {
                 ", nacionalidadPersona='" + nacionalidadPersona + '\'' +
                 ", estadoCivil='" + estadoCivil + '\'' +
                 '}';
+    }
+
+    @Override
+    public void listarCitas(CitaMedica citas) {
+
+    }
+
+    @Override
+    public int cancelarCita(int idCita) {
+        return 0;
+    }
+
+    @Override
+    public void agendarCita(Persona p) {
+
+    }
+
+    @Override
+    public int actualizaPaciente(int idPaciente) {
+        return 0;
     }
 }
