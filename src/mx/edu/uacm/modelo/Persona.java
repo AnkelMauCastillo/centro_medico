@@ -54,6 +54,8 @@ public class Persona implements IPaciente{
         return estadoCivil;
     }
 
+
+
     @Override
     public String toString() {
         return "Persona{" +
@@ -66,6 +68,10 @@ public class Persona implements IPaciente{
                 ", nacionalidadPersona='" + nacionalidadPersona + '\'' +
                 ", estadoCivil='" + estadoCivil + '\'' +
                 '}';
+    }
+
+    public Persona(Persona persona) {
+        this.nombrePersona = persona.getNombrePersona();
     }
 
     @Override

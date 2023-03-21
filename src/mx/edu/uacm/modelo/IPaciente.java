@@ -1,7 +1,7 @@
 package mx.edu.uacm.modelo;
 
 public interface IPaciente {
-    Expediente expediente = new Expediente();
+    Expediente expediente = new Expediente ();
 
     public void listarCitas(CitaMedica citas);
 
