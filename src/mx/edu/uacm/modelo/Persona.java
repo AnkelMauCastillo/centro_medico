@@ -87,4 +87,9 @@ public class Persona implements IPaciente{
     public int actualizaPaciente(int idPaciente) {
         return 0;
     }
+
+    @Override
+    public int buscarExpediente(Expediente expediente) {
+        return 0;
+    }
 }
