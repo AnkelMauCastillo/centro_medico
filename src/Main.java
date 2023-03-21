@@ -26,8 +26,8 @@ public class Main {
 
         Expediente expediente = new Expediente();
         //System.out.println(expediente.getExpedientes());
-        expediente.agregarConsulta(new Consulta(new Date(23,4,2023), medico));
-        expediente.agregarConsulta(new Consulta(new Date(24, 5,2023 ), medico1));
+        expediente.agregarConsulta(new Consulta(new Date(23,4,2023)));
+        expediente.agregarConsulta(new Consulta(new Date(24, 5,2023 )));
         /*for (Consulta next : expediente.getExpedientes().values()) {
             System.out.println(next);
 
@@ -46,6 +46,14 @@ public class Main {
         System.out.println();
         for (Consulta c:
                 expediente) {
+            System.out.println(c);
+        }
+
+        medico.agregarConsulta(new Consulta(new Date(22/1/22)));
+        medico.agregarConsulta(new Consulta(new Date(23/1/22)));
+
+        for (Consulta c:
+             medico.getListaConsultas().values()) {
             System.out.println(c);
         }
 
