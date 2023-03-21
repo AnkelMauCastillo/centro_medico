@@ -15,4 +15,13 @@ public class Empleado extends Persona{
         this.salarioEmpleado = salarioEmpleado;
         this.fechaContratacion = fechaContratacion;
     }
+
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "numeroEmpleado=" + numeroEmpleado +
+                ", salarioEmpleado=" + salarioEmpleado +
+                ", fechaContratacion=" + fechaContratacion +
+                '}';
+    }
 }
